@@ -1,0 +1,191 @@
+
+.body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url('./img/nubes-fondo.png');
+}
+
+.material-icons-outlined{
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.icon-gato{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+
+.titulo-principal{
+    margin-top: 95px;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.titulo-principal-blanco{
+    margin-top: 95px;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.titulo-secundario{
+    font-size: 24px;
+    font-style: italic;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.contenedor .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition:  all 0.3s;
+}
+
+.contenedor .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.contenedor .card img{
+    width: 330px;
+    height: 330px;
+}
+
+
+.centrado{
+    text-align: center;
+}
+
+
+
+/*--------Parallax--------*/
+
+.parallax{
+    /* The image used */
+    background-image: url('./img/fondo-space.png');
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /*scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.div-parallax{
+    height:700px;
+    /*background: rgb(1,9,34);
+    background: linear-gradient(180deg, rgba(1,9,34,1) 0%, rgba(111,147,226,1) 42%, rgba(204,222,222,1) 100%);*/
+    background: rgb(185,202,210);
+    background: linear-gradient(180deg, rgba(185,202,210,1) 0%, rgba(156,176,222,1) 53%, rgba(120,205,239,1) 100%);
+    font-size:28px;
+    color: #fff;
+}
+
+.parallax-1{
+    /* The image used */
+    background-image: url('./img/nubes-fondo.png');
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /*scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.flex-parrafo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.flex-parrafo .parrafo{
+    width: 450px;
+    height: 350px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.parrafo{
+    margin-top: 250px;
+}
+
+
+/*social*/
+
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+.none-decoration{
+    text-decoration: none;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 55px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
