@@ -1,20 +1,39 @@
 
 .body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: url('./img/nubes-fondo.png');
+    font-family: 'Source Serif Pro', serif;
+    /* background: url('./img/nubes-fondo.png'); */
+
 }
 
-.material-icons-outlined{
-    cursor: pointer;
-    margin-right: 15px;
+
+.icon-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    background-color: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
-.icon-gato{
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-}
 
+.icon-button__badge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+
+}
 
 .titulo-principal{
     margin-top: 95px;
@@ -34,8 +53,16 @@
 }
 
 .titulo-secundario{
-    font-size: 24px;
+    font-size: 22px;
     font-style: italic;
+    color: #000;
+}
+
+.titulo-secundario-2{
+    font-size: 40px;
+    font-style: bold;
+    color: #000;
+    text-shadow: 2px 2px 2px rgb(0, 132, 255);
 }
 
 .logo{
@@ -51,12 +78,12 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    cursor: pointer;
+
 }
 
 .contenedor .card{
-    width: 330px;
-    height: 430px;
+    width: 350px;
+    height: 470px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -66,8 +93,7 @@
 }
 
 .contenedor .card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -76,73 +102,113 @@
     height: 330px;
 }
 
+.button{
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.button:hover{
+    color: rgb(0, 132, 255);
+}
+
+.parrafo-card{
+    font-size: 24px;
+}
 
 .centrado{
     text-align: center;
 }
 
 
+/* Home */
 
-/*--------Parallax--------*/
 
-.parallax{
-    /* The image used */
-    background-image: url('./img/fondo-space.png');
-
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /*scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.fondo-coleccion{
+    height:800px;
+    animation: cambiarColor 5s ease-in-out infinite;
+    color: #000;
 }
 
 
-.div-parallax{
-    height:700px;
-    /*background: rgb(1,9,34);
-    background: linear-gradient(180deg, rgba(1,9,34,1) 0%, rgba(111,147,226,1) 42%, rgba(204,222,222,1) 100%);*/
-    background: rgb(185,202,210);
-    background: linear-gradient(180deg, rgba(185,202,210,1) 0%, rgba(156,176,222,1) 53%, rgba(120,205,239,1) 100%);
-    font-size:28px;
-    color: #fff;
-}
 
-.parallax-1{
-    /* The image used */
-    background-image: url('./img/nubes-fondo.png');
-
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /*scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@keyframes cambiarColor{
+    0%{
+        background-color: rgb(36, 187, 247);
+    }
+    50%{
+        background-color: rgb(20, 135, 243);
+    }
+    100%{
+        background-color: rgb(36, 187, 247);
+    }
 }
 
 
-.flex-parrafo{
+
+.contened{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
+}
+
+.contened-aside{
+    display: flex;
+    flex: 0.5;
     margin: auto;
+    margin-left: 100px;
 }
 
-.flex-parrafo .parrafo{
-    width: 450px;
-    height: 350px;
-    border: 3px solid black;
-    border-radius: 5px;
-    font-size: 18px;
+.contened-article{
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 300px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.titulo-promo{
+    font-size: 70px;
+    font-weight: 400;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.parrafo{
-    margin-top: 250px;
+.button-alinear{
+    margin-top: 50px;
+
+}
+
+
+/*Fondo Productos*/
+
+/* .banner{
+    height: 91vw; 
+}*/
+
+.banner{
+    /* content: ''; */
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:url('./img/banner-chispitas.png');
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 611px;
+    }
 }
 
 
@@ -154,8 +220,13 @@ footer{
     text-align: center;
 }
 
-.none-decoration{
-    text-decoration: none;
+.pointer{
+    color: #000;
+}
+
+.pointer:hover{
+    color: rgb(20, 135, 243);
+    cursor: pointer;
 }
 
 .fa {
