@@ -6,6 +6,20 @@
 }
 
 
+.nav-link--link{
+    color: #000;
+    opacity: 0.7;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.nav-link--link:hover{
+    text-decoration: none;
+    color: rgb(210, 128, 248);
+}
+
 .icon-button{
     position: relative;
     display: flex;
@@ -28,11 +42,24 @@
     right: -10px;
     width: 25px;
     height: 25px;
-    background-color: red;
+    background-color: rgb(155, 97, 247);
     align-items: center;
     border-radius: 50%;
     color: #fff;
 
+}
+
+.none-decoration{
+    text-decoration: none;
+}
+.none-decoration:hover{
+    text-decoration: none;
+}
+
+.slash-2 {
+    height: 0.5px;
+    width: 65%;
+    background-color: rgb(173, 1, 253);
 }
 
 .titulo-principal{
@@ -41,6 +68,7 @@
     font-size: 40px;
     font-style: italic;
     text-transform: uppercase;
+    text-shadow: 3px 3px 3px rgb(174, 128, 248);
 }
 
 .titulo-principal-blanco{
@@ -62,7 +90,7 @@
     font-size: 40px;
     font-style: bold;
     color: #000;
-    text-shadow: 2px 2px 2px rgb(0, 132, 255);
+    text-shadow: 2px 2px 2px rgb(149, 91, 241);
 }
 
 .logo{
@@ -83,7 +111,7 @@
 
 .contenedor .card{
     width: 350px;
-    height: 470px;
+    height: 500px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -102,18 +130,19 @@
     height: 330px;
 }
 
-.button{
-    width: 50px;
-    height: 50px;
-    color: #333333;
-    background-color: #fff;
-    border: none;
-    outline: none;
+.btn.button{
+    width: 250px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    background-color: rgb(174, 128, 248);
+    transition: 0.3s;
 }
 
-.button:hover{
-    color: rgb(0, 132, 255);
-}
+
+.btn.button:hover{
+    background-color: rgb(123, 48, 245);
+} 
 
 .parrafo-card{
     font-size: 24px;
@@ -133,17 +162,52 @@
     color: #000;
 }
 
+@media (max-width:768px){
+    .fondo-coleccion{
+        width: 100%;
+    }
+    .titulo-promo{
+        font-size: 16px;
+    }
+    .imagen-gato{
+        width: 350px;
+        height: auto;
+    }
+}
 
+@media (max-width:550px){
+    .fondo-coleccion{
+        width: 100%;
+    }
+    .titulo-promo{
+        font-size: 14px;
+    }
+    .imagen-gato{
+        display: none;
+    }
+}
+@media (max-width:450px){
+    .fondo-coleccion{
+        width: 100%;
+    }
+    .titulo-promo{
+        font-weight: 200;
+        font-size: 10px;
+    }
+    .imagen-gato{
+        display: none;
+    }
+}
 
 @keyframes cambiarColor{
     0%{
-        background-color: rgb(36, 187, 247);
+        background-color: rgb(131, 74, 223);
     }
     50%{
-        background-color: rgb(20, 135, 243);
+        background-color: rgb(159, 105, 247);
     }
     100%{
-        background-color: rgb(36, 187, 247);
+        background-color: rgb(131, 74, 233);
     }
 }
 
@@ -184,12 +248,6 @@
 
 }
 
-
-/*Fondo Productos*/
-
-/* .banner{
-    height: 91vw; 
-}*/
 
 .banner{
     /* content: ''; */
@@ -259,4 +317,161 @@ footer{
 .fa-instagram {
     background: #125688;
     color: white;
+}
+
+
+/* Tabla */
+
+
+.title{
+    font-size: 12px;
+}
+.img-size{
+    width: 200px;
+    height: auto;
+}
+
+.table__productos > .img-size{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.table__cantidad > input{
+    width: 40px;
+    border: none;
+} 
+
+.body-home{
+    font-family: 'Source Serif Pro', serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(198,150,237);
+    background: radial-gradient(circle, rgba(198,150,237,1) 0%, rgba(171,92,228,1) 53%, rgba(135,73,237,1) 100%);;
+}
+
+/* .flex-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.contenedor-home span{
+    font-size: 120pt;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Source Serif Pro', serif;
+    cursor: pointer;
+    color: rgb(26, 192, 243);
+    transition: all 300ms ease-in-out;
+}
+
+
+
+.contenedor-home span:hover{
+    filter: contrast(250%);
+}
+
+.contenedor-home span:nth-child(1){
+    color: rgb(26, 192, 243);
+    animation-delay: 1s;
+}
+.contenedor-home span:nth-child(2){
+    color: rgb(26, 192, 243);
+    animation-delay: 2s;
+}
+.contenedor-home span:nth-child(3){
+    color: rgb(26, 192, 243);
+    animation-delay: 3s;
+}
+.contenedor-home span:nth-child(4){
+    color: rgb(26, 192, 243);
+    animation-delay: 4s;
+}
+.contenedor-home span:nth-child(5){
+    color: rgb(26, 192, 243);
+    animation-delay: 5s;
+}
+.contenedor-home span:nth-child(6){
+    color: rgb(26, 192, 243);
+    animation-delay: 6s;
+}
+.contenedor-home span:nth-child(7){
+    color: rgb(26, 192, 243);
+    animation-delay: 7s;
+}
+
+.btn.button1{
+    background-color: rgb(26, 192, 243);
+    box-shadow: 2px 12px 52px 8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 12px 52px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 12px 52px 8px rgba(0,0,0,0.75);
+    transition: 0.3s;
+}
+.btn.button1:hover{
+    background-color: rgb(139, 82, 245);
+}
+
+.flex-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:600px){
+    .contenedor-home span{
+        font-size: 80pt;
+        font-weight: bold;
+        position: relative;
+        font-family: 'Source Serif Pro', serif;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+}
+
+@media(max-width:460px){
+    .contenedor-home span{
+        font-size: 60pt;
+        font-weight: bold;
+        position: relative;
+        font-family: 'Source Serif Pro', serif;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+}
+
+@media(max-width:376px){
+    .contenedor-home span{
+        font-size: 55pt;
+        font-weight: bold;
+        position: relative;
+        font-family: 'Source Serif Pro', serif;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+}
+
+@media(max-width:320px){
+    .contenedor-home span{
+        font-size: 50pt;
+        font-weight: bold;
+        position: relative;
+        font-family: 'Source Serif Pro', serif;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+}
+
+@media(max-width:280px){
+    .contenedor-home span{
+        font-size: 40pt;
+        font-weight: bold;
+        position: relative;
+        font-family: 'Source Serif Pro', serif;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
 }
